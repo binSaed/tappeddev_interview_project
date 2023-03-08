@@ -3,6 +3,10 @@
 *First of all, it's awesome that you are reading this introduction because that means, that you had your first successful interview. As a next step, we will check your Flutter skills, your knowledge, and how you solve problems.*
 
 
+## Demo
+https://user-images.githubusercontent.com/33700292/223879742-020e7cf1-349a-4741-bbb0-7cfe3697857f.mp4
+
+
 ## Introduction
 
 In this project, you will find designs from our app [Storyways](https://storyways.app). You can fork this repository, or create a new public repository on [GitHub](https://github.com/) or [GitLab](https://gitlab.com/) where you implement the screens shown in the designs.
