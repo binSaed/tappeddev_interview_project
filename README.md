@@ -22,12 +22,12 @@ Following features should be included:
 - [x] Create a list with a few book items that can be used for the different sections and the search
 - [x] "Continue" and "New" sections are in one list that is scrollable vertically
 - [x] "Continue" section can scroll horizontally
-- [ ] The `ListView` should build items lazy by using `ListView.builder`
-- [ ] Items should have touch feedback, but no navigation
+- [x] The `ListView` should build items lazy by using `ListView.builder`
+- [x] Items should have touch feedback, but no navigation
 - [x] When the search results appear, the overlay expands and reveals the items
 - [x] When the user taps outside of the overlay, the overlay closes
 - [x] When the user clears the text, the overlay closes as well
-- [ ] Bottom navigation bar does nothing on tap (only visuals)
+- [x] Bottom navigation bar does nothing on tap (only visuals)
 - [x] Light & Dark theme is possible and switch automatically when changing the device theme
 
 
