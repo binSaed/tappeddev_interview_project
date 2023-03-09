@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
               return SearchExpandableBody(query: query, clear: clear);
             },
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 12),
               child: CustomScrollView(
                 slivers: [
                   continueSection(context),
@@ -75,7 +75,7 @@ Widget continueSection(BuildContext context) {
                 ),
           ),
           SizedBox(
-            height: 168.0,
+            height: 166.0,
             child: ListView.builder(
               itemCount: books.length,
               scrollDirection: Axis.horizontal,
@@ -90,16 +90,37 @@ Widget continueSection(BuildContext context) {
                       children: [
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 8),
-                          child: Container(
-                            height: 102,
-                            width: 102,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                fit: BoxFit.cover,
-                                image: AssetImage(book.image),
+                          child: Stack(
+                            children: [
+                              Container(
+                                height: 102,
+                                width: 102,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  image: DecorationImage(
+                                    fit: BoxFit.cover,
+                                    image: AssetImage(book.image),
+                                  ),
+                                ),
                               ),
-                            ),
+                              Positioned(
+                                bottom: 0,
+                                right: 0,
+                                child: Container(
+                                  height: 40,
+                                  width: 40,
+                                  decoration: const BoxDecoration(
+                                    color: Color(0xff5C5EA6),
+                                    shape: BoxShape.circle,
+                                  ),
+                                  child: Center(
+                                    child: SvgPicture.asset(
+                                      'assets/icons/play_icon.svg',
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
                           ),
                         ),
                         Text(
